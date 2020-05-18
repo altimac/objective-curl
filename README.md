@@ -1,3 +1,14 @@
+## Main goal of this fork
+
+I had to use libcurl to upload files from an iOS app to a FTPS server. CFNetwork FTP code is deprecated and probably does not support SSL authentication. There is no other replacement than libcurl either in Swift or ObjC.
+libcurl is quite complex to use and thus I wanted a Cocoa wrapper.
+objective-curl is pretty old (not using ARC) but somewhat works.
+To support FTPS (and not SFTP!!) I had to tweak the code a bit. Moreover to make it work on iOS instead of macOS several changes have been made. Using CommonCrypto (default on iOS/macOS) instead of OpenSSL (not available by default on iOS) also reduces the dependencies.
+
+I may plan to modernize the code later, but this is not a priority. I've mostly tweaked the code to support FTPS (instead of FTP or SFTP) and do not plan to update the code for other types of transfer (scp, ssh, S3 etc...)
+
+## ORIGINAL README:
+
 The objective-curl framework provides an easy-to-use interface to [libcurl](http://curl.haxx.se/libcurl/c/) for Cocoa developers. Right now only uploading is supported and on the following protocols: FTP, SFTP, and Amazon S3 (HTTPS). There are a couple other frameworks out there that use libcurl for network operations but all subclass [NSURLHandle](http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSURLHandle_Class/Reference/Reference.html), which has been deprecated since 10.4. This framework is designed to be used in more modern Cocoa applications and requires Mac OSX 10.5 or higher. 
 
 All curl objects are subclasses of  [NSObject](http://developer.apple.com/mac/library/documentation/cocoa/reference/Foundation/Classes/NSObject_Class/Reference/Reference.html).
