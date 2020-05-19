@@ -20,6 +20,7 @@
 
 /*
  * Called when the upload has progressed, 1-100%.
+ // Note that this method may be called (multiple times!) BEFORE -uploadDidBegin: is called. Percent will then be 0 though.
  */
 - (void)uploadDidProgress:(CurlUpload *)record toPercent:(NSNumber *)percent;
 

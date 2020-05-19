@@ -154,8 +154,8 @@
 - (void)setProtocolSpecificOptions
 {
 	curl_easy_setopt(handle, CURLOPT_USERPWD, [[self credentials] UTF8String]);
-    curl_easy_setopt(handle, CURLOPT_USE_SSL, CURLUSESSL_TRY);
-    curl_easy_setopt(handle, CURLOPT_SSL_VERIFYPEER, 0L); // don't verify SSL certificate of server
+    curl_easy_setopt(handle, CURLOPT_USE_SSL, CURLUSESSL_TRY); // try SSL but fallback to non SSL if it fails.
+    curl_easy_setopt(handle, CURLOPT_SSL_VERIFYPEER, 0L); // don't verify SSL certificate of server as many of us have self signed certificates.
 	curl_easy_setopt(handle, CURLOPT_FTP_CREATE_MISSING_DIRS, 1L);
 }
 
