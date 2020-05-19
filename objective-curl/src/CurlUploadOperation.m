@@ -121,10 +121,10 @@
 
 - (NSString *)urlForTransfer:(CurlFileTransfer *)file
 {
-	NSString *filePath = [[file remotePath] stringByAddingTildePrefix];
+	NSString *filePath = [[file remotePath] oc_stringByAddingTildePrefix];
 	
 	NSString *path = [[NSString stringWithFormat:@"%@:%d", [upload hostname], [upload port]]
-					  stringByAppendingPathPreservingAbsolutePaths:filePath];
+					  oc_stringByAppendingPathPreservingAbsolutePaths:filePath];
 	
 	NSString *url = [NSString stringWithFormat:@"%@://%@", [upload protocolPrefix], path];
 	
@@ -154,6 +154,8 @@
 - (void)setProtocolSpecificOptions
 {
 	curl_easy_setopt(handle, CURLOPT_USERPWD, [[self credentials] UTF8String]);
+    curl_easy_setopt(handle, CURLOPT_USE_SSL, CURLUSESSL_TRY);
+    curl_easy_setopt(handle, CURLOPT_SSL_VERIFYPEER, 0L); // don't verify SSL certificate of server
 	curl_easy_setopt(handle, CURLOPT_FTP_CREATE_MISSING_DIRS, 1L);
 }
 
@@ -330,7 +332,7 @@ static int handleUploadProgress(CurlUploadOperation *operation, int connected, d
 {
 	if (delegate && [delegate respondsToSelector:@selector(uploadDidFail:message:)])
 	{
-		[[delegate invokeOnMainThread] uploadDidFail:upload message:[upload statusMessage]];
+		[[delegate oc_invokeOnMainThread] uploadDidFail:upload message:[upload statusMessage]];
 	}	
 }
 
@@ -478,11 +480,11 @@ static int handleUploadProgress(CurlUploadOperation *operation, int connected, d
 	{
 		if (arg)
 		{
-			[[delegate invokeOnMainThread] performSelector:aSelector withObject:upload withObject:arg];
+			[[delegate oc_invokeOnMainThread] performSelector:aSelector withObject:upload withObject:arg];
 		}
 		else
 		{
-			[[delegate invokeOnMainThread] performSelector:aSelector withObject:upload];
+			[[delegate oc_invokeOnMainThread] performSelector:aSelector withObject:upload];
 		}
 	}
 }

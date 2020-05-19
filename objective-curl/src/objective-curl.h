@@ -4,8 +4,9 @@
  @discussion This header file includes all public classes referenced by the framework.
  */
 
-#import "CurlS3.h"
+//#import "CurlS3.h"
 #import "CurlSFTP.h"
+#import "CurlFTP.h"
 #import "CurlUpload.h"
 #import "CurlUploadDelegate.h"
 #import "CurlFileTransfer.h"

@@ -51,7 +51,7 @@
  */
 - (void)dealloc
 {
-	[operationQueue release], operationQueue = nil;
+    [operationQueue release]; operationQueue = nil;
 		
 	[super dealloc];
 }
