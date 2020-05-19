@@ -7,6 +7,8 @@ To support FTPS (and not SFTP!!) I had to tweak the code a bit. Moreover to make
 
 I may plan to modernize the code later, but this is not a priority. I've mostly tweaked the code to support FTPS (instead of FTP or SFTP) and do not plan to update the code for other types of transfer (scp, ssh, S3 etc...)
 
+Note that you should probably look at https://github.com/altimac/build-libcurl-ios.git to build the libcurl as a XCFramework (iOS+macOS), since this project links to it.
+
 ## ORIGINAL README:
 
 The objective-curl framework provides an easy-to-use interface to [libcurl](http://curl.haxx.se/libcurl/c/) for Cocoa developers. Right now only uploading is supported and on the following protocols: FTP, SFTP, and Amazon S3 (HTTPS). There are a couple other frameworks out there that use libcurl for network operations but all subclass [NSURLHandle](http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSURLHandle_Class/Reference/Reference.html), which has been deprecated since 10.4. This framework is designed to be used in more modern Cocoa applications and requires Mac OSX 10.5 or higher. 
