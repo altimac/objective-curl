@@ -25,7 +25,7 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"<%@ path => \"%@\", totalFiles => \"%lu\"}", NSStringFromClass([self class]), path, [files count]];
+    return [NSString stringWithFormat:@"<%@ path => \"%@\", totalFiles => \"%lu\"}", NSStringFromClass([self class]), path, (unsigned long)[files count]];
 }
 
 @end
