@@ -11,7 +11,7 @@
 @implementation NSString (PathExtras)
 
 
-- (NSString *)stringByAppendingPathPreservingAbsolutePaths:(NSString *)str
+- (NSString *)oc_stringByAppendingPathPreservingAbsolutePaths:(NSString *)str
 {
 	NSMutableString *res = [[self stringByAppendingPathComponent:str] mutableCopy];
 	
@@ -23,7 +23,7 @@
 	return (NSString *)res;
 }
 
-- (NSString *)stringByAddingTildePrefix
+- (NSString *)oc_stringByAddingTildePrefix
 {
 	if ([self isEqualToString:@""])
 		return @"~/";
@@ -40,7 +40,7 @@
 }
 
 
-- (NSString *)stringByRemovingTildePrefix
+- (NSString *)oc_stringByRemovingTildePrefix
 {
 	if ([[self substringToIndex:2] isEqualToString:@"~/"])
 	{

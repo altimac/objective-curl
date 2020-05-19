@@ -27,12 +27,12 @@
 
 @implementation NSObject (DDExtensions)
 
-- (id)invokeOnMainThread;
+- (id)oc_invokeOnMainThread;
 {
-    return [self invokeOnMainThreadAndWaitUntilDone:NO];
+    return [self oc_invokeOnMainThreadAndWaitUntilDone:NO];
 }
 
-- (id)invokeOnMainThreadAndWaitUntilDone:(BOOL)waitUntilDone;
+- (id)oc_invokeOnMainThreadAndWaitUntilDone:(BOOL)waitUntilDone;
 {
     InvocationGrabber * grabber = [InvocationGrabber invocationGrabber];
     [grabber setForwardInvokesOnMainThread:YES];

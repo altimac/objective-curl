@@ -10,8 +10,8 @@
 
 @interface NSString (PathExtras)
 
-- (NSString *)stringByAppendingPathPreservingAbsolutePaths:(NSString *)str;
-- (NSString *)stringByAddingTildePrefix;
-- (NSString *)stringByRemovingTildePrefix;
+- (NSString *)oc_stringByAppendingPathPreservingAbsolutePaths:(NSString *)str;
+- (NSString *)oc_stringByAddingTildePrefix;
+- (NSString *)oc_stringByRemovingTildePrefix;
 
 @end
