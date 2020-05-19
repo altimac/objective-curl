@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C43311D22471253100652101 /* CurlFileTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311982471253100652101 /* CurlFileTransfer.h */; };
+		C43311D22471253100652101 /* CurlFileTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311982471253100652101 /* CurlFileTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311D42471253100652101 /* CurlUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = C433119A2471253100652101 /* CurlUpload.m */; };
-		C43311D52471253100652101 /* CurlClientType.h in Headers */ = {isa = PBXBuildFile; fileRef = C433119B2471253100652101 /* CurlClientType.h */; };
-		C43311D62471253100652101 /* CurlRemoteFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = C433119C2471253100652101 /* CurlRemoteFolder.h */; };
+		C43311D52471253100652101 /* CurlClientType.h in Headers */ = {isa = PBXBuildFile; fileRef = C433119B2471253100652101 /* CurlClientType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311D62471253100652101 /* CurlRemoteFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = C433119C2471253100652101 /* CurlRemoteFolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311D72471253100652101 /* CurlUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C433119D2471253100652101 /* CurlUploadOperation.m */; };
 		C43311D82471253100652101 /* CurlFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = C433119E2471253100652101 /* CurlFTP.m */; };
-		C43311DB2471253100652101 /* DDInvocationGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A12471253100652101 /* DDInvocationGrabber.h */; };
+		C43311DB2471253100652101 /* DDInvocationGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A12471253100652101 /* DDInvocationGrabber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311DC2471253100652101 /* CurlSSHUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311A22471253100652101 /* CurlSSHUploadOperation.m */; };
-		C43311DD2471253100652101 /* CurlSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A32471253100652101 /* CurlSFTP.h */; };
-		C43311E02471253100652101 /* NSString+PathExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A62471253100652101 /* NSString+PathExtras.h */; };
+		C43311DD2471253100652101 /* CurlSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A32471253100652101 /* CurlSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311E02471253100652101 /* NSString+PathExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A62471253100652101 /* NSString+PathExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311E12471253100652101 /* CurlRemoteFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311A72471253100652101 /* CurlRemoteFile.m */; };
-		C43311E22471253100652101 /* CurlRemoteObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A82471253100652101 /* CurlRemoteObject.h */; };
+		C43311E22471253100652101 /* CurlRemoteObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311A82471253100652101 /* CurlRemoteObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311E32471253100652101 /* CurlObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311A92471253100652101 /* CurlObject.m */; };
 		C43311E62471253100652101 /* CurlSCP.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311AC2471253100652101 /* CurlSCP.m */; };
 		C43311E82471253100652101 /* CurlOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311AE2471253100652101 /* CurlOperation.m */; };
-		C43311E92471253100652101 /* NSObject+DDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311AF2471253100652101 /* NSObject+DDExtensions.h */; };
-		C43311EB2471253100652101 /* ftpparse.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311B12471253100652101 /* ftpparse.h */; };
-		C43311EC2471253100652101 /* CurlClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311B22471253100652101 /* CurlClient.h */; };
+		C43311E92471253100652101 /* NSObject+DDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311AF2471253100652101 /* NSObject+DDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311EB2471253100652101 /* ftpparse.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311B12471253100652101 /* ftpparse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311EC2471253100652101 /* CurlClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311B22471253100652101 /* CurlClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311EE2471253100652101 /* objective-curl.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311B42471253100652101 /* objective-curl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311EF2471253100652101 /* CurlRemoteFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311B52471253100652101 /* CurlRemoteFolder.m */; };
-		C43311F02471253100652101 /* CurlUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311B62471253100652101 /* CurlUpload.h */; };
+		C43311F02471253100652101 /* CurlUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311B62471253100652101 /* CurlUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311F22471253100652101 /* CurlFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311B82471253100652101 /* CurlFileTransfer.m */; };
 		C43311F42471253100652101 /* CurlSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311BA2471253100652101 /* CurlSFTP.m */; };
-		C43311F52471253100652101 /* CurlSSHUploadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311BB2471253100652101 /* CurlSSHUploadOperation.h */; };
+		C43311F52471253100652101 /* CurlSSHUploadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311BB2471253100652101 /* CurlSSHUploadOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43311F62471253100652101 /* DDInvocationGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311BC2471253100652101 /* DDInvocationGrabber.m */; };
-		C43311F72471253100652101 /* CurlFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311BD2471253100652101 /* CurlFTP.h */; };
-		C43311F82471253100652101 /* CurlUploadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311BE2471253100652101 /* CurlUploadOperation.h */; };
-		C43311FA2471253100652101 /* CurlOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C02471253100652101 /* CurlOperation.h */; };
-		C43311FB2471253100652101 /* CurlTransferStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C12471253100652101 /* CurlTransferStatus.h */; };
-		C43311FC2471253100652101 /* CurlSCP.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C22471253100652101 /* CurlSCP.h */; };
+		C43311F72471253100652101 /* CurlFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311BD2471253100652101 /* CurlFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311F82471253100652101 /* CurlUploadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311BE2471253100652101 /* CurlUploadOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311FA2471253100652101 /* CurlOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C02471253100652101 /* CurlOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311FB2471253100652101 /* CurlTransferStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C12471253100652101 /* CurlTransferStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43311FC2471253100652101 /* CurlSCP.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C22471253100652101 /* CurlSCP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43312002471253100652101 /* CurlRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311C62471253100652101 /* CurlRemoteObject.m */; };
-		C43312012471253100652101 /* CurlObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C72471253100652101 /* CurlObject.h */; };
-		C43312022471253200652101 /* CurlRemoteFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C82471253100652101 /* CurlRemoteFile.h */; };
+		C43312012471253100652101 /* CurlObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C72471253100652101 /* CurlObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43312022471253200652101 /* CurlRemoteFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311C82471253100652101 /* CurlRemoteFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43312032471253200652101 /* NSString+PathExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311C92471253100652101 /* NSString+PathExtras.m */; };
-		C43312072471253200652101 /* CurlUploadDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311CD2471253100652101 /* CurlUploadDelegate.h */; };
+		C43312072471253200652101 /* CurlUploadDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311CD2471253100652101 /* CurlUploadDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43312092471253200652101 /* ftpparse.c in Sources */ = {isa = PBXBuildFile; fileRef = C43311CF2471253100652101 /* ftpparse.c */; };
 		C433120A2471253200652101 /* NSObject+DDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311D02471253100652101 /* NSObject+DDExtensions.m */; };
-		C433120B2471253200652101 /* CurlConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311D12471253100652101 /* CurlConnectionDelegate.h */; };
+		C433120B2471253200652101 /* CurlConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311D12471253100652101 /* CurlConnectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C433120D247130A900652101 /* curl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C433120C247130A900652101 /* curl.xcframework */; };
 		C433120E247130A900652101 /* curl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C433120C247130A900652101 /* curl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		C4331211247134B200652101 /* SecProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = C4331210247134B200652101 /* SecProtocolType.h */; };
-		C4331214247135AF00652101 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = C4331212247135AF00652101 /* NSString+MD5.h */; };
+		C4331211247134B200652101 /* SecProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = C4331210247134B200652101 /* SecProtocolType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4331214247135AF00652101 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = C4331212247135AF00652101 /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4331215247135AF00652101 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C4331213247135AF00652101 /* NSString+MD5.m */; };
 		C433121D247139E100652101 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C433121C247139E100652101 /* libz.1.dylib */; };
 		C43312262471498F00652101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C43312252471498F00652101 /* AppDelegate.m */; };
@@ -315,28 +315,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43311EE2471253100652101 /* objective-curl.h in Headers */,
-				C4331211247134B200652101 /* SecProtocolType.h in Headers */,
+				C43311DD2471253100652101 /* CurlSFTP.h in Headers */,
+				C43311F72471253100652101 /* CurlFTP.h in Headers */,
 				C43312072471253200652101 /* CurlUploadDelegate.h in Headers */,
 				C43311F02471253100652101 /* CurlUpload.h in Headers */,
+				C43312022471253200652101 /* CurlRemoteFile.h in Headers */,
+				C433120B2471253200652101 /* CurlConnectionDelegate.h in Headers */,
+				C43311D22471253100652101 /* CurlFileTransfer.h in Headers */,
+				C43311FB2471253100652101 /* CurlTransferStatus.h in Headers */,
+				C43311D62471253100652101 /* CurlRemoteFolder.h in Headers */,
+				C43311D52471253100652101 /* CurlClientType.h in Headers */,
+				C4331211247134B200652101 /* SecProtocolType.h in Headers */,
 				C43311F82471253100652101 /* CurlUploadOperation.h in Headers */,
 				C43311E22471253100652101 /* CurlRemoteObject.h in Headers */,
 				C43311F52471253100652101 /* CurlSSHUploadOperation.h in Headers */,
 				C43311E92471253100652101 /* NSObject+DDExtensions.h in Headers */,
-				C43312022471253200652101 /* CurlRemoteFile.h in Headers */,
 				C43311E02471253100652101 /* NSString+PathExtras.h in Headers */,
-				C43311F72471253100652101 /* CurlFTP.h in Headers */,
 				C43311EB2471253100652101 /* ftpparse.h in Headers */,
 				C43311FC2471253100652101 /* CurlSCP.h in Headers */,
 				C43311EC2471253100652101 /* CurlClient.h in Headers */,
 				C43311DB2471253100652101 /* DDInvocationGrabber.h in Headers */,
-				C433120B2471253200652101 /* CurlConnectionDelegate.h in Headers */,
-				C43311D52471253100652101 /* CurlClientType.h in Headers */,
-				C43311D22471253100652101 /* CurlFileTransfer.h in Headers */,
-				C43311FB2471253100652101 /* CurlTransferStatus.h in Headers */,
 				C4331214247135AF00652101 /* NSString+MD5.h in Headers */,
 				C43311FA2471253100652101 /* CurlOperation.h in Headers */,
-				C43311DD2471253100652101 /* CurlSFTP.h in Headers */,
-				C43311D62471253100652101 /* CurlRemoteFolder.h in Headers */,
 				C43312012471253100652101 /* CurlObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,7 +519,7 @@
 		0B5AE608176970D000B31A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -554,7 +554,7 @@
 		0B5AE609176970D000B31A29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
