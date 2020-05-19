@@ -11,7 +11,7 @@
 
 @protocol CurlUploadDelegate
 
-
+@optional
 /*
  * Called when the upload has started.
  */ 
