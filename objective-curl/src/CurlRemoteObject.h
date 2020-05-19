@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CurlTransferStatus.h"
-
+#import "SecProtocolType.h"
 
 @interface CurlRemoteObject : NSObject
 {

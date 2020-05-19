@@ -27,7 +27,7 @@ static int hostKeyCallback(CURL *curl, const struct curl_khkey *knownKey, const 
 	
 	CurlUpload *transfer = [operation upload];
 	
-	NSString *receivedKey = [NSString formattedMD5:foundKey->key length:foundKey->len];
+	NSString *receivedKey = [NSString oc_formattedMD5:foundKey->key length:foundKey->len];
 	
 	switch (type)
 	{
@@ -73,7 +73,7 @@ static int hostKeyCallback(CURL *curl, const struct curl_khkey *knownKey, const 
 {
 	if ([file isEmptyDirectory])
 	{
-		const char *removeTempFile = [[NSString stringWithFormat:@"RM \"%@\"", [[file remotePath] stringByRemovingTildePrefix]] UTF8String];
+		const char *removeTempFile = [[NSString stringWithFormat:@"RM \"%@\"", [[file remotePath] oc_stringByRemovingTildePrefix]] UTF8String];
 		
 		[file appendPostQuote:removeTempFile];
 	}
@@ -84,9 +84,9 @@ static int hostKeyCallback(CURL *curl, const struct curl_khkey *knownKey, const 
 
 - (NSString *)urlForTransfer:(CurlFileTransfer *)file
 {
-	NSString *filePath = [[file remotePath] stringByRemovingTildePrefix];
+	NSString *filePath = [[file remotePath] oc_stringByRemovingTildePrefix];
 		
-	NSString *path = [[NSString stringWithFormat:@"%@:%d", [upload hostname], [upload port]] stringByAppendingPathComponent:[filePath stringByAddingTildePrefix]];
+	NSString *path = [[NSString stringWithFormat:@"%@:%d", [upload hostname], [upload port]] stringByAppendingPathComponent:[filePath oc_stringByAddingTildePrefix]];
 		
 	NSString *url = [NSString stringWithFormat:@"%@://%@", [upload protocolPrefix], path];
 		
@@ -105,7 +105,7 @@ static int hostKeyCallback(CURL *curl, const struct curl_khkey *knownKey, const 
 	
 	if (delegate && [delegate respondsToSelector:@selector(acceptUnknownHostFingerprint:forUpload:)])
 	{
-		answer = [[delegate invokeOnMainThreadAndWaitUntilDone:YES] 
+		answer = [[delegate oc_invokeOnMainThreadAndWaitUntilDone:YES] 
 					acceptUnknownHostFingerprint:fingerprint forUpload:record];
 	}
 	else
@@ -128,7 +128,7 @@ static int hostKeyCallback(CURL *curl, const struct curl_khkey *knownKey, const 
 	
 	if (delegate && [delegate respondsToSelector:@selector(acceptMismatchedHostFingerprint:forUpload:)])
 	{
-		answer = [[delegate invokeOnMainThreadAndWaitUntilDone:YES] 
+		answer = [[delegate oc_invokeOnMainThreadAndWaitUntilDone:YES] 
 					acceptMismatchedHostFingerprint:fingerprint forUpload:record];
 	}
 	else

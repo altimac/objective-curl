@@ -10,6 +10,7 @@
 #import "CurlUploadOperation.h"
 #import "CurlUpload.h"
 #import "NSString+PathExtras.h"
+#import "SecProtocolType.h"
 
 
 @implementation CurlFTP
@@ -22,7 +23,8 @@
 {		
 	if (self = [super init])
 	{
-		[self setProtocol:kSecProtocolTypeFTP];
+		//[self setProtocol:kSecProtocolTypeFTPS]; // FTPS is FTP, use FTP as libcurl handles ftps as ftp.
+        [self setProtocol:kSecProtocolTypeFTP];
 		
 		directoryListCache = [[NSMutableDictionary alloc] init];
 	}
@@ -114,7 +116,7 @@
 	[upload setHostname:hostname];
 	[upload setUsername:username];
 	[upload setPassword:password];
-	[upload setPath:[directory stringByRemovingTildePrefix]];
+	[upload setPath:[directory oc_stringByRemovingTildePrefix]];
 	[upload setPort:port];
 
 	[self upload:upload];

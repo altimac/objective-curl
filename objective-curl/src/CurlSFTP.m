@@ -11,6 +11,7 @@
 #import "CurlClientType.h"
 #import "CurlUpload.h"
 #import "CurlSSHUploadOperation.h"
+#import "SecProtocolType.h"
 
 NSString * const DEFAULT_KNOWN_HOSTS = @"~/.ssh/known_hosts";
 
@@ -42,7 +43,7 @@ NSString * const DEFAULT_KNOWN_HOSTS = @"~/.ssh/known_hosts";
  */
 - (void)dealloc
 {
-	[knownHostsFile release], knownHostsFile = nil;
+    [knownHostsFile release]; knownHostsFile = nil;
 
 	[super dealloc];
 }

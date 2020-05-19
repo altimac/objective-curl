@@ -6,8 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SecProtocolType.h"
 #import <sys/stat.h>
-#import "patched-curl.h"
+//#import "patched-curl.h"
+#import <curl/curl.h>
 
 @class CurlRemoteObject;
 

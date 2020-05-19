@@ -5,7 +5,7 @@
 //  Copyright 2010 Nick Jensen <http://goto11.net>
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import "CurlOperation.h"
 #import "CurlClient.h"
 
@@ -20,7 +20,7 @@
 
 @property(readwrite, retain) CurlUpload *upload;
 
-static int handleUploadProgress(CurlUploadOperation *operation, int connected, double dltotal, double dlnow, double ultotal, double ulnow);
+//static int handleUploadProgress(CurlUploadOperation *operation, int connected, double dltotal, double dlnow, double ultotal, double ulnow);
 
 -(BOOL)dependentOperationCancelled;
 

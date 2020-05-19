@@ -7,6 +7,7 @@
 
 
 @class CurlUpload;
+#import "SecProtocolType.h"
 
 @protocol CurlClient
 

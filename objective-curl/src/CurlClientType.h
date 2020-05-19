@@ -10,5 +10,4 @@
 typedef enum {
 	CURL_CLIENT_SFTP,
 	CURL_CLIENT_FTP,
-	CURL_CLIENT_S3
 } CurlClientType;
