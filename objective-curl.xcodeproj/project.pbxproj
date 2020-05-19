@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,8 +45,6 @@
 		C43312092471253200652101 /* ftpparse.c in Sources */ = {isa = PBXBuildFile; fileRef = C43311CF2471253100652101 /* ftpparse.c */; };
 		C433120A2471253200652101 /* NSObject+DDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C43311D02471253100652101 /* NSObject+DDExtensions.m */; };
 		C433120B2471253200652101 /* CurlConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C43311D12471253100652101 /* CurlConnectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C433120D247130A900652101 /* curl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C433120C247130A900652101 /* curl.xcframework */; };
-		C433120E247130A900652101 /* curl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C433120C247130A900652101 /* curl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C4331211247134B200652101 /* SecProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = C4331210247134B200652101 /* SecProtocolType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4331214247135AF00652101 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = C4331212247135AF00652101 /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4331215247135AF00652101 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C4331213247135AF00652101 /* NSString+MD5.m */; };
@@ -61,6 +59,7 @@
 		C433123B247149A500652101 /* objective_curl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C433118F247124CC00652101 /* objective_curl.framework */; };
 		C4331240247149F000652101 /* objective_curl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C433118F247124CC00652101 /* objective_curl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C433124224714B0600652101 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C433124124714B0600652101 /* test.mp4 */; };
+		C4B889EF24744E560014C207 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B889EE24744E560014C207 /* libcurl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,17 +73,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C433120F247130A900652101 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C433120E247130A900652101 /* curl.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C433123F247149E200652101 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,7 +130,6 @@
 		C43311CF2471253100652101 /* ftpparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ftpparse.c; sourceTree = "<group>"; };
 		C43311D02471253100652101 /* NSObject+DDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DDExtensions.m"; sourceTree = "<group>"; };
 		C43311D12471253100652101 /* CurlConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurlConnectionDelegate.h; sourceTree = "<group>"; };
-		C433120C247130A900652101 /* curl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = curl.xcframework; path = "../build-libcurl-ios-altimac/dist/curl.xcframework"; sourceTree = "<group>"; };
 		C4331210247134B200652101 /* SecProtocolType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecProtocolType.h; sourceTree = "<group>"; };
 		C4331212247135AF00652101 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		C4331213247135AF00652101 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
@@ -160,6 +147,7 @@
 		C43312352471499100652101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C43312362471499100652101 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C433124124714B0600652101 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		C4B889EE24744E560014C207 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../build-libcurl-ios-altimac/dist/lib/libcurl.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C433121D247139E100652101 /* libz.1.dylib in Frameworks */,
-				C433120D247130A900652101 /* curl.xcframework in Frameworks */,
+				C4B889EF24744E560014C207 /* libcurl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +193,8 @@
 		0B5AE5F7176970D000B31A29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4B889EE24744E560014C207 /* libcurl.a */,
 				C433121C247139E100652101 /* libz.1.dylib */,
-				C433120C247130A900652101 /* curl.xcframework */,
 				0B5AE5F8176970D000B31A29 /* Cocoa.framework */,
 				0B5AE60D1769711100B31A29 /* Foundation.framework */,
 			);
@@ -352,7 +340,6 @@
 				C433118B247124CC00652101 /* Sources */,
 				C433118C247124CC00652101 /* Frameworks */,
 				C433118D247124CC00652101 /* Resources */,
-				C433120F247130A900652101 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +385,8 @@
 					};
 					C43312212471498F00652101 = {
 						CreatedOnToolsVersion = 11.4;
+						DevelopmentTeam = Y5RAH3A6C3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -542,12 +531,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/curl.xcframework/Headers\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/lib\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/curl.xcframework/Headers\"";
-				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/curl.xcframework/Headers\"";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/include\"";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/include\"";
 			};
 			name = Debug;
 		};
@@ -571,17 +561,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/curl.xcframework/Headers\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/lib\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/curl.xcframework/Headers\"";
-				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/curl.xcframework/Headers\"";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/include\"";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../build-libcurl-ios-altimac/dist/include\"";
 			};
 			name = Release;
 		};
 		C4331195247124CD00652101 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -623,11 +615,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/objective-curl/objective-curl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.herdly.objective-curl-ios";
@@ -644,6 +632,7 @@
 		C4331196247124CD00652101 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -685,11 +674,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/objective-curl/objective-curl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.herdly.objective-curl-ios";
@@ -744,10 +729,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "objective-curlTest/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.herdly.objective-curlTest";
@@ -797,10 +779,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "objective-curlTest/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.herdly.objective-curlTest";
